@@ -46,21 +46,22 @@ data-driven-lead-scoring/
 ├── datasets/                           # Sample datasets with lead data (CSV files)
 │
 ├── docs/                               # Project documentation and diagrams
-│   ├── lead_scoring_rules.md           # Documentation for lead scoring logic
-│   ├── data_flow.drawio                # Diagram showing the flow from CSV to scoring
+│   ├── score_lead_definition.md        # Documentation for lead scoring logic
+│   ├── data_flow.drawio                # TODO: Diagram showing the flow from CSV to scoring
 │   ├── project_overview.md             # Overview of the project, its goals, and features
 │
-├── scoring/                            # Python scripts for scoring leads
-│   ├── score_leads.py                  # Main scoring script (CSV input and output)
+├── scripts/                            # Python scripts for scoring leads
+│   ├── fake_data_generator.py          # Creates 10000 fake data csv file
+|   ├── score_calculation.pt            # Main scoring script (CSV input and output)
 │
-├── web/                                # Web interface for uploading and exporting leads (optional)
-│   ├── app.py                          # Streamlit/Flask app for handling the upload & export
+├── web/                                # TODO: Web interface for uploading and exporting leads (optional)
+│   ├── app.py                          # TODO: Streamlit/Flask app for handling the upload & export
 │
-├── tests/                              # Test scripts for validating the scoring system
-│   ├── test_scoring.py                 # Unit tests for the lead scoring function
+├── tests/                              # TODO: Test scripts for validating the scoring system
+│   ├── test_scoring.py                 # TODO: Unit tests for the lead scoring function
 │
 ├── README.md                           # Project overview and instructions
-├── .gitignore                          # Files and directories to be ignored by Git
+├── .gitignore                          # TODO: Files and directories to be ignored by Git
 └── requirements.txt                    # Dependencies and requirements for the project
 
 ```
@@ -71,8 +72,4 @@ The lead scoring algorithm scores each lead based on multiple attributes. Here a
 
 
 Attribute	Points Rule
-Company Size	+20 points for companies with >50 employees
-Job Title	+30 points for "Head of Marketing" or "CTO"
-Email Domain	+10 points for non-Gmail email domains
-Industry	+15 points for industries like Tech or Education
-Location	+10 points for leads based in the US or EU
+... REFINING SCORING SYSTEM ... IN PROGRESS ...
