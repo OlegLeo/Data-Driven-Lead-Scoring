@@ -43,26 +43,29 @@ Here’s how the data flow looks for scoring the leads:
 ```
 data-driven-lead-scoring/
 │
-├── datasets/                           # Sample datasets with lead data (CSV files)
+├── datasets/                               # Sample datasets with lead data (CSV files)
+│   ├── leads.csv                           # fake generated data of 10000 entries with fale_data_generated.py
+│   ├── all_leads_scored.csv                # all the data is orginized by the score lead and outputed in this file from the leads.csv
 │
-├── docs/                               # Project documentation and diagrams
-│   ├── score_lead_definition.md        # Documentation for lead scoring logic
-│   ├── data_flow.drawio                # TODO: Diagram showing the flow from CSV to scoring
-│   ├── project_overview.md             # Overview of the project, its goals, and features
+├── docs/                                   # Project documentation and diagrams
+│   ├── score_lead_definition.md            # Documentation for lead scoring logic
+│   ├── data_flow.drawio                    # TODO: Diagram showing the flow from CSV to scoring
+│   ├── project_overview.md                 # Overview of the project, its goals, and features 
+|   ├── top_score_leads_output_example.png  # Python script output for top the score (score >= x)
+|
+├── scripts/                                # Python scripts for scoring leads
+│   ├── fake_data_generator.py              # Creates 10000 fake data csv file
+|   ├── score_calculation.pt                # Main scoring script (CSV input and output)
 │
-├── scripts/                            # Python scripts for scoring leads
-│   ├── fake_data_generator.py          # Creates 10000 fake data csv file
-|   ├── score_calculation.pt            # Main scoring script (CSV input and output)
+├── web/                                    # TODO: Web interface for uploading and exporting leads (optional)
+│   ├── app.py                              # TODO: Streamlit/Flask app for handling the upload & export
 │
-├── web/                                # TODO: Web interface for uploading and exporting leads (optional)
-│   ├── app.py                          # TODO: Streamlit/Flask app for handling the upload & export
+├── tests/                                  # TODO: Test scripts for validating the scoring system
+│   ├── test_scoring.py                     # TODO: Unit tests for the lead scoring function
 │
-├── tests/                              # TODO: Test scripts for validating the scoring system
-│   ├── test_scoring.py                 # TODO: Unit tests for the lead scoring function
-│
-├── README.md                           # Project overview and instructions
-├── .gitignore                          # TODO: Files and directories to be ignored by Git
-└── requirements.txt                    # Dependencies and requirements for the project
+├── README.md                               # Project overview and instructions
+├── .gitignore                              # TODO: Files and directories to be ignored by Git
+└── requirements.txt                        # Dependencies and requirements for the project
 
 ```
 ---
