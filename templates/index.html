@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lead Scorer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Center all table headers */
+    th {
+      text-align: center;
+    }
+
+    /* Style for centering the content in the first column */
+    .rank-column {
+      text-align: center;
+    }
+
+    /* Center content for all cells in the table */
+    td {
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+  <h1 class="mb-4">Upload Your Leads CSV</h1>
+
+  <form method="POST" enctype="multipart/form-data">
+    <div class="mb-3">
+      <input type="file" name="file" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Upload and Score</button>
+  </form>
+
+  {% if columns %}
+    <h2 class="mt-5">Top 10 Leads</h2>
+    <div class="table-responsive">
+      <table class="table table-striped mt-3">
+        <thead>
+          <tr>
+            {% for column in columns %}
+              <th>{{ column }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in top_rows %}
+            <tr>
+              <!-- First column is for ranking -->
+              <td class="rank-column">
+                {% if loop.index == 1 %}
+                  🥇
+                {% elif loop.index == 2 %}
+                  🥈
+                {% elif loop.index == 3 %}
+                  🥉
+                {% else %}
+                  {{ loop.index }}
+                {% endif %}
+              </td>
+              {% for cell in row %}
+                <td>{{ cell }}</td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <a href="/download" class="btn btn-success mt-3">Download Scored CSV</a>
+  {% endif %}
+</div>
+
+</body>
+</html>
