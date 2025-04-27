@@ -1,2 +1,4 @@
 faker
 tabulate
+pandas
+flask
