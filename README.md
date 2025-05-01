@@ -3,6 +3,15 @@
 Welcome to the Data-Driven Lead Scoring MVP repository! 🚀
 This project demonstrates a simple yet powerful lead scoring solution powered by data analytics. Designed as a minimal viable product (MVP), it helps SaaS companies prioritize their leads based on actionable data insights.
 
+## 🎯 Product Vision
+To empower small and mid-sized B2B companies to quickly identify and prioritize their highest-value leads through a simple, secure, and smart data-based lead scoring platform — without needing to adopt a full CRM solution or customize complex logic.
+
+##  MVP Product Strategy
+Target Audience: 
+  - Early B2B tech companies, agencies, or service providers in Portugal or EU markets
+  - Don’t yet have a sophisticated CRM, or underutilize their CRM
+  - Are overwhelmed by tools like HubSpot or Salesforce, or don’t want to invest in them
+
 ---
 ## 🧠 Project Overview
 This project focuses on building a lead scoring system for SaaS companies using data-driven insights. It takes a CSV file with lead data, processes it, and scores leads based on specific criteria (such as company size, job title, etc.).
@@ -10,11 +19,23 @@ This project focuses on building a lead scoring system for SaaS companies using 
 ---
 
 ## 🛠️ Key Features
-CSV Upload: Users can upload CSV files with lead data.
 
-Lead Scoring: Scores leads based on predefined rules (e.g., job title, company size).
+This MVP provides a lightweight, guided experience that enables client to have access to these core features:
+🔒 Login system (email + password for companies)
+→ Builds trust, protects their data, feels personalized
 
-Simple Export: Download the results as a CSV with scores.
+📁 CSV Upload of leads → Fast way to bring in lead data from their CRM/export/manual efforts
+
+🧠 Hardcoded Scoring Logic → Based on company size, job title, industry, and location
+→ Defined together with the client (done by you in early stages)
+
+📊 Top 10 leads displayed → Easy visual overview of high-priority opportunities
+
+📥 Download scored leads (CSV) → Fully scored and sorted dataset, ready for sales action
+
+📈 Simple Chart: Leads submitted/requested over time → Trends over last 7 days, 30 days, quarter
+→ Helps show ROI and activity flow
+
 
 ---
 
@@ -33,7 +54,7 @@ Here’s how the data flow looks for scoring the leads:
 
   - Pandas: For working with CSV files and data manipulation.
 
-  - Streamlit/Flask/Django (Optional): For building the web-based MVP interface.
+  - Streamlit/Flask/Django: For building the web-based MVP interface.
 
 ---
 
