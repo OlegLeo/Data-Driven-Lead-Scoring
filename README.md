@@ -6,7 +6,7 @@ This project demonstrates a simple yet powerful lead scoring solution powered by
 ## 🎯 Product Vision
 To empower small and mid-sized B2B companies to quickly identify and prioritize their highest-value leads through a simple, secure, and smart data-based lead scoring platform — without needing to adopt a full CRM solution or customize complex logic.
 
-##  MVP Product Strategy
+## 💡 MVP Product Strategy
 Target Audience: 
   - Early B2B tech companies, agencies, or service providers in Portugal or EU markets
   - Don’t yet have a sophisticated CRM, or underutilize their CRM
