@@ -21,6 +21,7 @@ This project focuses on building a lead scoring system for SaaS companies using 
 ## 🛠️ Key Features
 
 This MVP provides a lightweight, guided experience that enables client to have access to these core features:
+
 🔒 Login system (email + password for companies)
 → Builds trust, protects their data, feels personalized
 
