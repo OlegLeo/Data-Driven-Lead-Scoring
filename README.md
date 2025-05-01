@@ -28,7 +28,7 @@ This MVP provides a lightweight, guided experience that enables client to have a
 📁 CSV Upload of leads → Fast way to bring in lead data from their CRM/export/manual efforts
 
 🧠 Hardcoded Scoring Logic → Based on company size, job title, industry, and location
-→ Defined together with the client (done by you in early stages)
+→ Defined together with the client
 
 📊 Top 10 leads displayed → Easy visual overview of high-priority opportunities
 
